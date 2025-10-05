@@ -1,0 +1,43 @@
+<div class="games-wrapper">
+  <div class="jg-banner">
+    <img class="img-fluid" src="assets\images\JG_Logo.png" />
+  </div>
+  <div class="content-wrapper">
+    <div class="steam-link">
+      <h2>
+        <a
+          href="https://store.steampowered.com/app/2937640/Jtunns_Greed/"
+          ><img src="assets/images/SteamWhite.png" height="50px"
+        /></a>
+      </h2>
+      <h2>
+        <a
+          href="assets/files/PressKit_JG.zip"
+          target="_self"
+          download="assets/files/PressKit_JG.zip"
+          >Download Our Press Kit (5 MB)</a
+        >
+      </h2>
+    </div>
+
+    <div class="jg-content">
+      <app-content-card
+        [isRight]="false"
+        [cardTitle]="'Down with the Jötunn!'"
+        [cardSubtitle]="''"
+        [cardContent]="aboutJG"
+        [image]="'assets/gifs/sail.gif'"
+      ></app-content-card>
+    </div>
+
+    <div class="jg-content">
+      <app-content-card
+        [isRight]="true"
+        [cardTitle]="'Wield god-like powers'"
+        [cardSubtitle]="''"
+        [cardContent]="ultimate"
+        [image]="'assets/gifs/thor.gif'"
+      ></app-content-card>
+    </div>
+  </div>
+</div>
