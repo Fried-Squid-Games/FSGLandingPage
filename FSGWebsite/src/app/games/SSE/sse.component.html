@@ -1,0 +1,107 @@
+<div class="games-wrapper">
+  <div class="sse-banner">
+    <img class="img-fluid" src="assets\images\SSELogo.png" />
+  </div>
+  <div class="content-wrapper">
+    <div class="steam-link">
+      <h2>
+        <a
+          href="https://store.steampowered.com/app/2124300/Shopping_Spree_Extreme/"
+          ><img src="assets/images/SteamWhite.png" height="50px"
+        /></a>
+      </h2>
+      <h2>
+        <a
+          href="assets/files/PressKit.zip"
+          target="_self"
+          download="assets/files/PressKit.zip"
+          >Download Our Press Kit (48 MB)</a
+        >
+      </h2>
+    </div>
+    <div class="col-lg-8 trailer">
+      <app-youtube-player></app-youtube-player>
+    </div>
+    <div class="sse-content">
+      <app-content-card
+        [isRight]="false"
+        [cardTitle]="'Cart Chaos!'"
+        [cardSubtitle]="''"
+        [cardContent]="aboutSSE"
+        [image]="'assets/gifs/PutInCart.gif'"
+      ></app-content-card>
+    </div>
+    <div class="sse-content">
+      <app-content-card
+        [isRight]="true"
+        [cardTitle]="'Shove to Win!'"
+        [cardSubtitle]="''"
+        [cardContent]="goalSSE"
+        [image]="'assets/gifs/RKO.gif'"
+      ></app-content-card>
+    </div>
+    <div class="sse-content">
+      <app-content-card
+        [isRight]="false"
+        [cardTitle]="'Can I Shop There?'"
+        [cardSubtitle]="''"
+        [cardContent]="levelsSSE"
+        [image]="'assets/gifs/Coop_Weeee.gif'"
+      ></app-content-card>
+    </div>
+    <div class="sse-content">
+      <app-content-card
+        [isRight]="true"
+        [cardTitle]="'Bring Some Friends!'"
+        [cardSubtitle]="''"
+        [cardContent]="multiSSE"
+        [image]="'assets/gifs/PvPFriends.gif'"
+      ></app-content-card>
+    </div>
+  </div>
+
+  <ngb-carousel
+    [animation]="true"
+    [pauseOnHover]="false"
+    [interval]="3500"
+    [showNavigationArrows]="false"
+    [showNavigationIndicators]="false"
+    class="mx-auto col-lg-8 col-sm-12 col-xs-12 col-md-10"
+  >
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level1Cover.PNG'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level2Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level3Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level4Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level5Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level6Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level7Cover.png'"/>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

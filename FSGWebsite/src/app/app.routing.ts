@@ -1,13 +1,15 @@
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home';
-import { GamesComponent } from './games';
+import { SSEComponent } from './games/SSE';
 import { ResourcesComponent } from './resources';
 import { NewsComponent } from './news';
+import { JGComponent } from './games/JG';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'games/shopping-spree-extreme', component: GamesComponent },
+  { path: 'games/shopping-spree-extreme', component: SSEComponent },
+  { path: 'games/jotunns-greed', component: JGComponent },
   { path: 'resources', component: ResourcesComponent },
   { path: 'news', component: NewsComponent },
 

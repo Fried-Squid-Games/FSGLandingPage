@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home';
-import { GamesComponent } from './games';
+import { SSEComponent } from './games/SSE';
 import { ResourcesComponent } from './resources';
 import { NewsComponent } from './news';
 import { appRoutingModule } from './app.routing';
@@ -23,12 +23,15 @@ import { ImageGridComponent } from './image-grid/image-grid.component';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { JGComponent } from './games/JG';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    GamesComponent,
+    SSEComponent,
+    JGComponent,
     ResourcesComponent,
     NewsComponent,
     NavbarComponent,
@@ -52,7 +55,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     NgbModule,
     NgbCarouselModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
