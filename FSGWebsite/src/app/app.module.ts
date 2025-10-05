@@ -24,7 +24,6 @@ import { YoutubePlayerComponent } from './youtube-player/youtube-player.componen
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { JGComponent } from './games/JG';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
