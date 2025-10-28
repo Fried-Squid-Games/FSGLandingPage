@@ -14,6 +14,9 @@ import {
 export class JGComponent implements AfterViewInit {
   @ViewChildren('jgContent') sseContentElements!: QueryList<ElementRef>;
 
+  ytUrl: string = "https://www.youtube-nocookie.com/embed/CjzP_1ZJbpY?si=Pd1F7p0H4t3n_UyA";
+  ytTitle: string = "Jötunn's Greed - Early Access Trailer";
+
   constructor() {}
 
   ngAfterViewInit(): void {

@@ -14,6 +14,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class SSEComponent implements AfterViewInit {
   @ViewChildren('sseContent') sseContentElements!: QueryList<ElementRef>;
+  ytUrl : string = "https://www.youtube-nocookie.com/embed/OLe2mpiMvc0?si=jpv4mfK2AlWBuwGx";
+  ytTitle : string = "Shopping Spree: Extreme!!! Gameplay Trailer";
 
   constructor() {}
 

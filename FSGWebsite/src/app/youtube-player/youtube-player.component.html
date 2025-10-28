@@ -1,7 +1,8 @@
 <div class="ratio ratio-16x9">
   <iframe
-  src="https://www.youtube-nocookie.com/embed/OLe2mpiMvc0?si=jpv4mfK2AlWBuwGx"
-  title="Shopping Spree: Extreme!!! Gameplay Trailer"
+  *ngIf="safeUrl"
+  [src]="safeUrl"
+  [title]="ytTitle"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen>
   </iframe>
