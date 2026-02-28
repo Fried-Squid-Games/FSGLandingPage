@@ -1,2 +1,3 @@
-# SSELandingPage
-The Landing Page for Shopping Spree: Extreme!!!
+# FSGLandingPage
+The Landing Page for Fried Squid Games
+Built using Angular v9
